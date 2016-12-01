@@ -1,0 +1,46 @@
+tuto/aide mémoire pour git
+http://bioinfo-fr.net/git-premiers-pas
+
+essais dans le rep project
+
+pour l'installation :
+$sudo apt-get install git
+
+pour configurer un compte :
+$git config --global user.name "Gérard Menvuça"
+$git config --global user.email "super.gege@wanadold.fr"
+
+Pour créer un projet :
+dans le repertoir de projet 
+$git init
+
+Pour voir l'état actuel du dépôt 
+$git status
+
+Pour travailler, juste creer ces fichiers, scripts ...
+pour prendre en charge son travail :
+$git add script.txt #si on fait $git status maintenant on voit le script.txt ajouté au dépôt
+
+on peut ajouter plusieur chose en même temps avec add
+
+Pour sauvegarder une version définitive/fonctionnelle:
+$git commit script.txt
+l'option -m permet de mettre une note pour indiquer la fonctionnalitée
+sinon par défaut le terminal demande a entrer une note de fonction
+
+Faire un commit à chaque fois qu'on est sur d'une fonctionnalitée
+
+Pour récapituler, il faut donc faire une combinaison d'une suite de "git add" pour ajouter les fichiers pertinents à l'index, et "git commit" pour valider les changements des fichiers de l'index.
+
+
+
+Pour historique des commit successifs :
+$git log 
+
+pour comparer la version courante du fichier avec la derniere version du git add :
+$git diff
+
+l'option --cached de git diff montre la derniere version prise en compte par l'index avec l'état lors du dernier commit (ce qui va être modifié lors du prochain commit)
+
+
+gitignore
